@@ -18,12 +18,12 @@ if holes== 3:
 
     score= par - 9
 
-    if score>=0:
-        print(f"Nice try, {player_name}, your total score was +{score}")
-    elif score==0:
+    if score==0:
         print(f"Good game, {player_name}, your score was 0")
+    elif  score>=0:
+        print(f"Nice try, {player_name}, your total score was +{score}")
     elif score<=0:
-        print(f"Great job, {player_name}, your score was -{score}")
+        print(f"Great job, {player_name}, your score was {score}")
 
 elif holes== 6:
     hole1 = input("How many putts for Hole 1? (par is 3) ")
@@ -40,16 +40,15 @@ elif holes== 6:
     hole6= int (hole6)
 
     par= hole1 + hole2 + hole3 + hole4 + hole5 + hole6
-    print(par)
     par= int(par)
 
     score= par - 18
 
-     if score>=0:
-        print(f"Nice try, {player_name}, your total score was +{score}")
-     elif score==0:
+    if score==0:
         print(f"Good game, {player_name}, your score was 0")
-     elif score<=0:
-        print(f"Great job, {player_name}, your score was -{score}")
+    elif score>=0:
+        print(f"Nice try, {player_name}, your total score was +{score}")
+    elif score<=0:
+        print(f"Great job, {player_name}, your score was {score}")
 
 else: print ("Sorry, we don't have that course. please try again.")
